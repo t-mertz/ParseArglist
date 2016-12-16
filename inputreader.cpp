@@ -1,6 +1,13 @@
 #include "inputreader.h"
 
 
+Alltypes::Alltypes() {}
+
+template<class T>
+T& Alltypes::as(void) {
+	return T (_value);
+}
+
 template <class T>
 Anytype<T>::Anytype(T value) : _value(value){}
 

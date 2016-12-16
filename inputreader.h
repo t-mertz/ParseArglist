@@ -6,7 +6,12 @@ enum class prim_type {
     INT, FLOAT, DOUBLE, STRING
 };
 
-class Alltypes {};
+class Alltypes {
+	public:
+		Alltypes();
+		template <class T>
+		T& as(void);
+};
 
 /*
 template<class T>
